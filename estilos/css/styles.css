@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*MENU NAV no cambiar!!!*/
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav__inline{
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: .5rem;
+    color: black;
+    transition: background .5s;
+    transition: transform 2s;
+}
+.nav__inline:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/*FIN MENU NAV*/
+
+/*LOGO*/
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 15%;
+    background-position: center;
+}
+/*FIN LOGO*/
+
+.titulo_principal {
+    font-weight: bold;
+    text-align: center;
+    font-size: 4rem;
+    word-spacing: .8rem;
+}
+
+.parrafo_principal {
+    font-size: 1.8rem;
+    word-spacing: .4rem;
+    margin: 1rem;  
+    text-align: center;
+}
+/*
+tag {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(17, 120, 100);
+}*/
+
+.textoyfoto {
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        justify-items: center;
+        gap: 20px;
+}
+
+
+.fotoinicio {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+
+h1 {
+    text-align: center;
+    color: rgb(39, 46, 45);
+    font-size: 3.2rem;
+    word-spacing: .5rem;
+}
+h2 {
+    color: black;
+    font-size: 2rem;
+    word-spacing: .5rem;
+    margin: 1.5rem;
+}
+.texto {
+    font-size: 1.5em;
+    margin: 1rem;
+    word-spacing: .4rem;
+    text-align: center;
+}
+
+
+.info {
+    font-size: 1.4em;
+    text-align: center;
+    padding: .7rem;
+}
+
+/*.negrita_cursiva{
+    display: flex;
+    font-size: 1.5rem;
+    word-spacing: .4rem;
+    margin: 1rem;
+
+}*/
+/*PONER LAS TRES FOTOS O DOS UNA AL LADO DE LA OTRA*/
+.fotoslastres {
+    display: flex;
+    overflow: hidden;
+    
+    margin: 1rem;
+}
+ul {
+    list-style-type: none; 
+}
+ol {
+    list-style-type: circle;
+    font-size: 1.3rem;
+    word-spacing: .3rem;
+    margin: 3rem;
+}
+
+/*GALERIA DE FOTOS*/
+
+
+img {
+    width: 100%;
+}
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: .5rem;
+}
+/*.galeria__img--11 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+.galeria__img--12 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+.galeria__img--13 {
+    grid-column: span 4;
+    grid-row: 1;
+}*/
+.galeria__img--14 {
+    grid-column: span 4;
+    grid-row: 1 / 3;
+}
+.galeria__img--15 {
+    grid-column: span 4;
+    grid-row: 1 / 3;
+}
+.galeria__img--16 {
+    grid-column: span 4;
+    grid-row: 1 / 3;
+}
+
+/*GALERIA 2*/
+ 
+.galeria__img--21 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+.galeria__img--22 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+.galeria__img--23 {
+    grid-column: span 4;
+    grid-row: 1;
+}
+.galeria__img--24 {
+    grid-column: span 4;
+    grid-row: 2;
+}
+.galeria__img--25 {
+    grid-column: span 4;
+    grid-row: 2;
+}
+.galeria__img--26 {
+    grid-column: span 4;
+    grid-row: 2;
+}
+.galeria__img--27 {
+    padding: 1rem;
+    width: 30%;
+    height: 50%;
+}
+/*CONTACTO FORMULARIO*/
+.formulario1{
+    background-color: rgb(223, 221, 221);
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+.formulario2{
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+/*FIN CONTACTO FORMULARIO*/
+
+
+/*FOOTER*/
+.pie_pagina {
+    display: flex;
+    height: 3rem;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgba(17, 120, 100);
+    
+}
