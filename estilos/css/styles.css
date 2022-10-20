@@ -17,7 +17,7 @@
 .nav__inline{
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: 1em;
     padding: 1rem;
     margin: .5rem;
     color: black;
@@ -29,6 +29,7 @@
     transform: scale(1.2);
     cursor: pointer;
 }
+
 /*FIN MENU NAV*/
 
 /*LOGO*/
@@ -39,7 +40,7 @@
 }
 
 .header__logo{
-    width: 15%;
+    width: 12rem;
     background-position: center;
 }
 /*FIN LOGO*/
@@ -47,31 +48,34 @@
 .titulo_principal {
     font-weight: bold;
     text-align: center;
-    font-size: 4rem;
+    font-size: 4em;
     word-spacing: .8rem;
 }
 
 .parrafo_principal {
-    font-size: 1.8rem;
+    font-size: 1.4em;
     word-spacing: .4rem;
-    margin: 1rem;  
+    margin: 1em;  
+    text-align: center;
+}
+.texto {
+    font-size: .8em;
+    word-spacing: .4rem;
     text-align: center;
 }
 /*
 tag {
     font-size: 2rem;
-    font-weight: bold;
-    font-style: italic;
+    
     color: rgba(17, 120, 100);
 }*/
 
 .textoyfoto {
         display: grid;
-        grid-template-columns: 4fr 3fr;
+        grid-template-columns: 6fr 6fr;
         justify-items: center;
         gap: 20px;
 }
-
 
 .fotoinicio {
     width: 80%;
@@ -80,7 +84,6 @@ tag {
     
 }
 
-
 h1 {
     text-align: center;
     color: rgb(39, 46, 45);
@@ -88,16 +91,18 @@ h1 {
     word-spacing: .5rem;
 }
 h2 {
-    color: black;
-    font-size: 2rem;
     word-spacing: .5rem;
     margin: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
 }
-.texto {
-    font-size: 1.5em;
-    margin: 1rem;
-    word-spacing: .4rem;
-    text-align: center;
+h3 {
+    color: black;
+    font-size: 1.1em;
+    word-spacing: .5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -107,22 +112,14 @@ h2 {
     padding: .7rem;
 }
 
-/*.negrita_cursiva{
-    display: flex;
-    font-size: 1.5rem;
-    word-spacing: .4rem;
-    margin: 1rem;
-
-}*/
-/*PONER LAS TRES FOTOS O DOS UNA AL LADO DE LA OTRA*/
-.fotoslastres {
+.fotolastres {
     display: flex;
     overflow: hidden;
-    
-    margin: 1rem;
+    padding: 1rem;
 }
 ul {
     list-style-type: none; 
+    padding-left: 0;
 }
 ol {
     list-style-type: circle;
@@ -132,7 +129,6 @@ ol {
 }
 
 /*GALERIA DE FOTOS*/
-
 
 img {
     width: 100%;
@@ -144,7 +140,6 @@ img {
     gap: 1.2rem;
     padding: .5rem;
 }
-
 /*.galeria__img--11 {
     grid-column: span 4;
     grid-row: 1;
@@ -156,7 +151,7 @@ img {
 .galeria__img--13 {
     grid-column: span 4;
     grid-row: 1;
-}
+}*/
 .galeria__img--14 {
     grid-column: span 4;
     grid-row: 1 / 3;
@@ -168,7 +163,7 @@ img {
 .galeria__img--16 {
     grid-column: span 4;
     grid-row: 1 / 3;
-}*/
+}
 
 /*GALERIA 2*/
  
@@ -213,7 +208,6 @@ img {
 }
 /*FIN CONTACTO FORMULARIO*/
 
-
 /*FOOTER*/
 .pie_pagina {
     display: flex;
@@ -222,4 +216,50 @@ img {
     text-align: center;
     background-color: rgba(17, 120, 100);
     
+}
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        font-size: 1em;
+    }    
+    .titulo_principal {
+        font-size: 2.2em;
+    }
+    .titulo_principal2 {
+        font-size: 1em;
+    }
+
+    .textoyfoto {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        justify-items: center;
+        gap: 20px;
+    }
+    .parrafo_principal {
+        font-size: 1em;
+        word-spacing: .4rem;
+        text-align: center;
+        grid-row: 1;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    
+    .titulo_principal2 {
+        font-size: 1.7em;
+    }
+    .textoyfoto {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
