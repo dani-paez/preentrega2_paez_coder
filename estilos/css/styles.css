@@ -250,7 +250,18 @@ img {
     }
     
 }
-
+@media screen and (max-width: 425px) {
+    
+    .titulo_principal2 {
+        font-size: 1.7em;
+    }
+    .textoyfoto {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media screen and (max-width: 320px) {
     
     .titulo_principal2 {
