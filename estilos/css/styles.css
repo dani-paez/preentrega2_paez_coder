@@ -1,3 +1,4 @@
+/*NORMALIZE
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*MENU NAV no cambiar!!!*/
+/*MENU NAV no cambiar!!!
 
 .nav{
     display: flex;
@@ -28,22 +29,24 @@
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     transform: scale(1.2);
     cursor: pointer;
-}
+}*/
 
 /*FIN MENU NAV*/
 
-/*LOGO*/
+/*LOGO
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.img-logo/*header__logo*/ {
+.img-logo {
     width: 12rem;
     background-position: center;
 }
 /*FIN LOGO*/
+
+/* LO PUSE EN NORMALIZE PORQUE ES GENERAL CASI EN TODAS LAS PAGINAS 
 
 .titulo_principal {
     font-weight: bold;
@@ -63,12 +66,6 @@
     word-spacing: .4rem;
     text-align: center;
 }
-/*
-tag {
-    font-size: 2rem;
-    
-    color: rgba(17, 120, 100);
-}*/
 
 .textoyfoto {
         display: grid;
@@ -128,7 +125,8 @@ ol {
     margin: 3rem;
 }
 
-/*GALERIA DE FOTOS*/
+*/
+/*GALERIA DE FOTOS
 
 img {
     width: 100%;
@@ -153,7 +151,7 @@ img {
 .galeria__img--13 {
     grid-column: span 4;
     grid-row: 1;
-}*/
+}
 .galeria__img--14 {
     grid-column: span 4;
     grid-row: 1 / 3;
@@ -167,7 +165,7 @@ img {
     grid-row: 1 / 3;
 }
 
-/*GALERIA 2*/
+/*GALERIA 2
  
 .galeria__img--21 {
     grid-column: span 4;
@@ -198,7 +196,11 @@ img {
     width: 30%;
     height: 50%;
 }
-/*CONTACTO FORMULARIO*/
+*/
+
+
+/*CONTACTO FORMULARIO
+
 .formulario1{
     background-color: rgb(223, 221, 221);
     margin: 2rem;
@@ -210,7 +212,7 @@ img {
 }
 /*FIN CONTACTO FORMULARIO*/
 
-/*FOOTER*/
+/*FOOTER
 .pie_pagina {
     display: flex;
     height: 3rem;
@@ -220,9 +222,9 @@ img {
     
 }
 
+*/
 
-
-/*MEDIA QUERIES*/
+/*MEDIA QUERIES
 @media screen and (max-width: 768px) {
     .nav {
         display: flex;
@@ -276,3 +278,4 @@ img {
         align-items: center;
     }
 }
+*/

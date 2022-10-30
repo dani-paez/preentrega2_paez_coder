@@ -1,0 +1,39 @@
+
+/*MENU NAV no cambiar!!!*/
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav__inline{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    padding: .6rem;
+    margin: .4rem;
+    color: black;
+    transition: background .3s;
+    transition: transform 2s;
+}
+.nav__inline:hover {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*FIN MENU NAV*/
+
+/*LOGO*/
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 12rem;
+    background-position: center;
+}
+/*FIN LOGO*/

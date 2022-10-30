@@ -1,0 +1,67 @@
+
+.titulo_principal {
+    font-weight: bold;
+    text-align: center;
+    font-size: 4em;
+    word-spacing: .8rem;
+}
+
+.parrafo_principal {
+    font-size: 1.4em;
+    word-spacing: .4rem;
+    margin: 1em;  
+    text-align: center;
+}
+.texto {
+    font-size: .8em;
+    word-spacing: .4rem;
+    text-align: center;
+}
+
+.textoyfoto {
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+        justify-items: center;
+        gap: 20px;
+}
+
+.fotoinicio {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+h1 {
+    text-align: center;
+    color: rgb(39, 46, 45);
+    font-size: 3.2rem;
+    word-spacing: .5rem;
+}
+h2 {
+    word-spacing: .5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+h3 {
+    color: black;
+    font-size: 1.1em;
+    word-spacing: .5rem;
+    margin: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.info {
+    font-size: 1.4em;
+    text-align: center;
+    padding: .7rem;
+}
+
+.fotolastres {
+    display: flex;
+    overflow: hidden;
+    padding: 1rem;
+}
