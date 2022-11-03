@@ -15,21 +15,19 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end; }
-
-.nav__inline {
-  display: flex;
-  flex-direction: row;
-  font-size: 1em;
-  padding: .6rem;
-  margin: .4rem;
-  color: black;
-  transition: background .3s;
-  transition: transform 2s; }
-
-.nav__inline:hover {
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  transform: scale(1.2);
-  cursor: pointer; }
+  .nav__inline {
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    padding: .6rem;
+    margin: .4rem;
+    color: black;
+    transition: background .3s;
+    transition: transform 2s; }
+    .nav__inline:hover {
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      transform: scale(1.2);
+      cursor: pointer; }
 
 /*FIN MENU NAV*/
 /*LOGO*/
@@ -55,7 +53,8 @@
   font-weight: bold;
   text-align: center;
   font-size: 4em;
-  word-spacing: .8rem; }
+  word-spacing: .8rem;
+  margin-top: auto; }
 
 .parrafo_principal {
   font-size: 1.4em;
@@ -109,6 +108,11 @@ h3 {
   overflow: hidden;
   padding: 1rem; }
 
+.video_centrado {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around; }
+
 ul {
   list-style-type: none;
   padding-left: 0; }
@@ -121,16 +125,17 @@ ol {
 
 /*GALERIA DE FOTOS*/
 img {
-  width: 100%; }
+  width: 75%; }
 
-#galeria {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1.2rem;
-  padding: .5rem; }
+/*#galeria {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: .5rem;
+}
 
-/*.galeria__img--11 {
+.galeria__img--11 {
     grid-column: span 4;
     grid-row: 1;
 }
@@ -188,16 +193,10 @@ img {
 }
 */
 /*CONTACTO FORMULARIO*/
-.formulario1 {
-  background-color: #dfdddd;
+.formulario {
   margin: 2rem;
-  font-size: 1.5rem; }
+  font-size: 1.3em; }
 
-.formulario2 {
-  margin: 2rem;
-  font-size: 1.3rem; }
-
-/*FIN CONTACTO FORMULARIO*/
 /* MEDIA QUERIES EN MISC */
 /*MEDIA QUERIES*/
 @media screen and (max-width: 768px) {
@@ -236,4 +235,10 @@ img {
   .textoyfoto {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0.5rem; } }

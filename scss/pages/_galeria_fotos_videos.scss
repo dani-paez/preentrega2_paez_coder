@@ -13,10 +13,10 @@ ol {
 /*GALERIA DE FOTOS*/
 
 img {
-    width: 100%;
+    width: 75%;
 }
 
-#galeria {
+/*#galeria {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -24,7 +24,7 @@ img {
     padding: .5rem;
 }
 
-/*.galeria__img--11 {
+.galeria__img--11 {
     grid-column: span 4;
     grid-row: 1;
 }

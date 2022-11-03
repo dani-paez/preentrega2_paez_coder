@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
            <a class="navbar-brand" href="#"></a>
-           <img class="img-fluid img-logo slide-in-left" src="../imagenes/logo2.png" alt="">
+           <img class="img-fluid img-logo slide-in-left" src="../imagenes/logo2.png" alt="Logo de THE KETO LAB">
 
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -53,9 +53,9 @@
         <p class="parrafo_principal">En este espacio te presentamos un formulario para que puedas anotarte a los siguientes cursos y talleres</p>
         <p class="parrafo_principal">No te olvides ningún dato</p>
     </div>
-        <div >
-            <fieldset class="formulario1">
-                <legend>INFORMACION PERSONAL DE CONTACTO</legend> 
+    <div>
+            <fieldset class="formulario">
+                <legend> PERSONAL DE CONTACTO</legend> 
             <form action="" method="GET" enctype="text/plain">
                 <div>
                     <label for="name">Nombre y Apellido</label>
@@ -74,7 +74,7 @@
                     <input type="date" name="date" id="date">
                 </div>
                 </fieldset>
-                <fieldset class="formulario1">
+                <fieldset class="formulario">
                     <legend>TALLERES</legend>
                     <div>
                         <label for="talleres">Quieres participar de los talleres:</label>
@@ -90,25 +90,20 @@
                         <label for="comentario">Cuentanos de qué te gustaria que realicemos los próximos talleres</label>
                     </div>
                     <div>
-                        <textarea name="comentario" id="comentario" cols="60" rows="5" minlength="1" maxlength="100"></textarea>
+                        <textarea name="comentario" id="comentario" cols="20" rows="5" minlength="1" maxlength="20"></textarea>
                     </div>
                     
                 </fieldset>
                 
                 <div>
-                    <input class="formulario2" type="reset" value="Reiniciar Formulario">
-                    <input class="formulario2" type="submit" value="Enviar Formulario">
+                    <input class="formulario" type="reset" value="Reiniciar Formulario">
+                    <input class="formulario" type="submit" value="Enviar Formulario">
                 </div> 
             </form>
-        </div>
-
+    </div>
+    
     <br>
-    <footer class="pie_pagina">
-        <hr>
-        <div ><a href="https://www.instagram.com/theketo.lab/">Instagram</a>
-           
-        </div>
-    </footer>
+    
     <script src="../js/bootstrap.bundle.js"></script>
 
 </body>
