@@ -60,7 +60,7 @@
   font-size: 1.4em;
   word-spacing: .4rem;
   margin: 1em;
-  text-align: center; }
+  text-align: initial; }
 
 .texto {
   font-size: .8em;
@@ -108,90 +108,103 @@ h3 {
   overflow: hidden;
   padding: 1rem; }
 
+.parrafoBio {
+  text-align: initial;
+  font-size: 1.4em; }
+
+.biografia {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1.5rem;
+  gap: .7rem; }
+  .biografia__texto {
+    grid-column: span 6;
+    grid-row: 1; }
+  .biografia__foto {
+    grid-column: span 6;
+    grid-row: 1;
+    justify-items: center; }
+  .biografia__info-virna {
+    grid-column: span 4;
+    grid-row: 2; }
+  .biografia__info-mariela {
+    grid-column: span 4;
+    grid-row: 2; }
+  .biografia__info-claudia {
+    grid-column: span 4;
+    grid-row: 2; }
+
+.infoCadaUna {
+  text-align: center;
+  font-size: 1.3em; }
+
 .video_centrado {
   display: flex;
   overflow: hidden;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 1.5rem; }
+
+.lab {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1.5rem;
+  gap: .7rem; }
+  .lab__texto-texto1 {
+    grid-column: span 6;
+    grid-row: 1; }
+  .lab__video1 {
+    grid-column: span 6;
+    grid-row: 1; }
+  .lab__texto-texto2 {
+    grid-column: span 6;
+    grid-row: 2; }
+  .lab__video2 {
+    grid-column: span 6;
+    grid-row: 2; }
 
 ul {
   list-style-type: none;
-  padding-left: 0; }
+  padding-left: 0;
+  text-align: inherit; }
 
 ol {
   list-style-type: circle;
   font-size: 1.3rem;
   word-spacing: .3rem;
-  margin: 3rem; }
+  margin: 1.5rem;
+  text-align: initial; }
 
 /*GALERIA DE FOTOS*/
 img {
   width: 75%; }
 
-/*#galeria {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1.2rem;
-    padding: .5rem;
-}
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: .7rem;
+  justify-items: center; }
+  .galeria__foto1 {
+    grid-column: span 4;
+    grid-row: 1; }
+  .galeria__foto3 {
+    grid-column: span 4;
+    grid-row: 2; }
+  .galeria__foto4 {
+    grid-column: span 4;
+    grid-row: 1; }
+  .galeria__foto5 {
+    grid-column: span 4;
+    grid-row: 2; }
+  .galeria__foto6 {
+    grid-column: span 4;
+    grid-row: 1; }
+  .galeria__foto2 {
+    grid-column: span 4;
+    grid-row: 2; }
 
-.galeria__img--11 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--12 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--13 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--14 {
-    grid-column: span 4;
-    grid-row: 1 / 3;
-}
-.galeria__img--15 {
-    grid-column: span 4;
-    grid-row: 1 / 3;
-}
-.galeria__img--16 {
-    grid-column: span 4;
-    grid-row: 1 / 3;
-}
-
-/*GALERIA 2
- 
-.galeria__img--21 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--22 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--23 {
-    grid-column: span 4;
-    grid-row: 1;
-}
-.galeria__img--24 {
-    grid-column: span 4;
-    grid-row: 2;
-}
-.galeria__img--25 {
-    grid-column: span 4;
-    grid-row: 2;
-}
-.galeria__img--26 {
-    grid-column: span 4;
-    grid-row: 2;
-}
-.galeria__img--27 {
-    padding: 1rem;
-    width: 30%;
-    height: 50%;
-}
-*/
 /*CONTACTO FORMULARIO*/
 .formulario {
   margin: 2rem;
@@ -218,8 +231,15 @@ img {
   .parrafo_principal {
     font-size: 1em;
     word-spacing: .4rem;
-    text-align: center;
-    grid-row: 1; } }
+    text-align: initial;
+    grid-row: 1; }
+  .parrafoBio {
+    font-size: 1em;
+    text-align: initial; }
+  ol {
+    font-size: .9em;
+    margin: 1rem;
+    text-align: initial; } }
 
 @media screen and (max-width: 425px) {
   .titulo_principal2 {
@@ -227,7 +247,17 @@ img {
   .textoyfoto {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center;
+    text-align: initial; }
+  .parrafoBio {
+    font-size: 1em;
+    text-align: initial; }
+  .infoCadaUna {
+    font-size: .9em; }
+  ol {
+    font-size: .9em;
+    margin: 1rem;
+    text-align: initial; } }
 
 @media screen and (max-width: 320px) {
   .titulo_principal2 {
@@ -235,10 +265,83 @@ img {
   .textoyfoto {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    text-align: initial; }
+  .parrafoBio {
+    font-size: 1.05em;
+    text-align: initial; }
+  .infoCadaUna {
+    font-size: .9em; }
+  .biografia {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 0.5fr);
+    padding: 1.5rem;
+    gap: .7rem; }
+    .biografia__texto {
+      grid-column: span 12;
+      grid-row: 1 / 4; }
+    .biografia__foto {
+      grid-column: span 12;
+      grid-row: 4 / 5; }
+    .biografia__info-virna {
+      grid-column: span 12;
+      grid-row: 5 / 6; }
+    .biografia__info-mariela {
+      grid-column: span 12;
+      grid-row: 6 / 7; }
+    .biografia__info-claudia {
+      grid-column: span 12;
+      grid-row: 7; }
+  .lab {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding: 1.5rem;
+    gap: .7rem; }
+    .lab__texto-texto1 {
+      grid-column: span 12;
+      grid-row: 1; }
+    .lab__video1 {
+      grid-column: span 12;
+      grid-row: 2; }
+    .lab__texto-texto2 {
+      grid-column: span 12;
+      grid-row: 3; }
+    .lab__video2 {
+      grid-column: span 12;
+      grid-row: 4; }
+  ol {
+    font-size: .9em;
+    margin: 1rem;
+    text-align: initial; }
   form {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    padding: 0.5rem; } }
+    padding: 0.5rem; }
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: .7rem;
+    justify-items: center; }
+    .galeria__foto1 {
+      grid-column: span 6;
+      grid-row: 1; }
+    .galeria__foto3 {
+      grid-column: span 6;
+      grid-row: 2; }
+    .galeria__foto4 {
+      grid-column: span 6;
+      grid-row: 1; }
+    .galeria__foto5 {
+      grid-column: span 6;
+      grid-row: 2; }
+    .galeria__foto6 {
+      grid-column: span 6;
+      grid-row: 3; }
+    .galeria__foto2 {
+      grid-column: span 6;
+      grid-row: 3; } }

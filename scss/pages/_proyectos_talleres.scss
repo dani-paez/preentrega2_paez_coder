@@ -2,4 +2,29 @@
     display: flex;
     overflow: hidden;
     justify-content: space-around;
+    padding: 1.5rem;
+}
+.lab {
+    display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: .7rem;
+        
+        &__texto-texto1 {
+            grid-column: span 6;
+            grid-row: 1;        
+        }
+        &__video1 {
+            grid-column: span 6;
+            grid-row: 1;
+        }
+        &__texto-texto2 {
+            grid-column: span 6;
+            grid-row: 2;
+        }
+        &__video2 {
+            grid-column: span 6;
+            grid-row: 2;
+        }
 }

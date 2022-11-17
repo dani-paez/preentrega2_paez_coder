@@ -1,0 +1,40 @@
+.parrafoBio {
+    text-align: initial;
+    font-size: 1.4em;
+}
+.biografia{
+    display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 1.5rem;
+        gap: .7rem;
+        
+        &__texto {
+            grid-column: span 6;
+            grid-row: 1;        
+        }
+        &__foto {
+            grid-column: span 6;
+            grid-row: 1;
+            justify-items: center;
+        }
+        &__info{
+            &-virna {
+                grid-column: span 4;
+                grid-row: 2;
+            }
+            &-mariela {
+                grid-column: span 4;
+                grid-row: 2;
+            }
+            &-claudia {
+                grid-column: span 4;
+                grid-row: 2;
+            }
+        }
+}
+.infoCadaUna{
+    text-align: center;
+    font-size: 1.3em;
+}
+

@@ -56,9 +56,40 @@
         <section class="textoyfoto">
             <article class="parrafo_principal">
                 <p>Hola, soy Claudia! soy una amante de la cocina, un espacio que disfruto mucho compartiendo en familia, con amigos y seres queridos</p>
-                <p>La cocina representa el corazón de la casa y desde muy pequeña cocinar es mi pasión, mi cable a tierra, mi hobby y también una forma de cuidar mi salud física y emocional.</p>                
+                <p>La cocina representa el corazón de la casa y desde muy pequeña cocinar es mi pasión, mi cable a tierra, mi hobby y también una forma de cuidar mi salud física y emocional.</p>  
+                <p>En esta página encontrarás los siguientes temas:</p>
+                <ol>
+                  <li><p>Comparto lo que me gusta con mis hermanas, vení a conocernos en nuestra <a href="./vistas/nosotras_informacion.html">Biografía</a></p>
+                  <li><p>Tenemos muchas recetas para que puedas por tus propios medios, videos y muchos <a href="./vistas/proyectos_talleres.html">Labs</a></p>   
+                  </li>
+                  <li><p>También nos divertimos haciendo Reels mientras cocinamos en nuestro instagram <a href="https://www.instagram.com/theketo.lab/reels/">Instagram - Reels</a></p>   
+                  </li>
+                  <li><p>En cada lab de cocina sacamos fotos, entra a nuestra <a href="./vistas/galeria_fotos_videos.html">Galeria de fotos y videos de Youtube</a></p>
+                </ol>
+                
             </article>
-            <img class="fotoinicio" src="./imagenes/clau13.jpeg" alt="foto de Claudia Calabro, dueña de la pagina">
+            <!--<img class="fotoinicio" src="./imagenes/clau13.jpeg" alt="foto de Claudia Calabro, dueña de la pagina">-->
+            <div id="carouselExampleInterval" class="carousel slide fotoinicio" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item active" data-bs-interval="10000">
+                   <img src="./imagenes/clau13.jpeg" class="d-block w-100" alt="foto de Claudia Calabro, dueña de la pagina">
+                 </div>
+                 <div class="carousel-item" data-bs-interval="2000">
+                   <img src="./imagenes/clau2.jpeg" class="d-block w-100" alt="foto de Claudia Calabro, dueña de la pagina">
+                 </div>
+                 <div class="carousel-item">
+                   <img src="./imagenes/clau7.jpeg" class="d-block w-100" alt="foto de Claudia Calabro, dueña de la pagina">
+                 </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
         </section>
 
     </main>
