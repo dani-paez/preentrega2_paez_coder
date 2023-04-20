@@ -52,25 +52,25 @@
         <p class="parrafo_principal">En este espacio te presentamos un formulario para que puedas anotarte a los siguientes cursos y talleres</p>
         <p class="parrafo_principal">No te olvides ningún dato</p>
     </div>
-    <div>
-            <fieldset class="formulario">
+    <div id="tablaConDatos">
+            <fieldset id="formulario1" class="formulario">
                 <legend> PERSONAL DE CONTACTO</legend> 
             <form action="" method="GET" enctype="text/plain">
                 <div>
-                    <label for="name">Nombre y Apellido</label>
-                    <input type="name" name="name" id="name">
+                    <label  for="name">Nombre y Apellido</label>
+                    <input id= "nombre" type="name" name="name" id="name">
                 </div>
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input id= "email" type="email" name="email" id="email" required>
                 </div>
                 <div>
                     <label for="age">Edad</label>
-                    <input type="number" name="age" id="age" min="1" max="100">
+                    <input id= "edad" type="number" name="age" id="age" min="1" max="100">
                 </div>
                 <div>
                     <label for="date">Fecha de nacimiento</label>
-                    <input type="date" name="date" id="date">
+                    <input id= "cumple" type="date" name="date" id="date">
                 </div>
                 </fieldset>
                 <fieldset class="formulario">
@@ -101,6 +101,8 @@
             </form>
     </div>
     <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/codigo_contacto.js"></script>
+
 
 </body>
 </html>
