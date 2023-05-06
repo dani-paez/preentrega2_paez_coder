@@ -31,7 +31,7 @@ function mostrarLabs (){
             
     }
 
-    //agregamos eventos
+    //agregO eventos
     labs.forEach((lab)=>{
         document.getElementById(`btn${lab.id}`).addEventListener('click', function(){
             agregarACarrito(lab);
@@ -41,7 +41,7 @@ function mostrarLabs (){
 
 mostrarLabs();
 
-//AGREGAR EN EL SIGUIENTE ALERT UN SWEETALERT**********************
+
 function tablaDeCompra(){
     for(const labs of carrito){
         document.getElementById("tablacompra").innerHTML += `
@@ -60,7 +60,6 @@ function tablaDeCompra(){
 tablaDeCompra();
 
 function agregarACarrito(labAAgregar){
-    
     carrito.push(labAAgregar);
     console.table(carrito);
     Swal.fire({
@@ -78,17 +77,10 @@ function agregarACarrito(labAAgregar){
         </tr>
     `;
     
-    
-    
-    //incrementar el total
     let totalCarrito = carrito.reduce((acumulador,lab)=> acumulador + lab.precio,0);
     let infoTotal = document.getElementById("total");
     infoTotal.innerText="Total a pagar u$: "+ totalCarrito;
-    /* let totalCarrito = carrito.reduce((acumulador,producto)=>acumulador+producto.precio,0);
-    document.getElementById('total').innerText = 'Total a pagar u$: '+totalCarrito;
-    //storage
-    localStorage.setItem("carrito",JSON.stringify(carrito)); */
-
+    
 }
 
 
@@ -110,8 +102,7 @@ function obtenerDolar(){
 }
 
 
-//aplique JSON para guardar los datos en el storage que van marcando para el carrito y que se vaya mostrando en consola el array y lo que se va almacenando
-
+//aplique JSON para guardar los datos en el storage 
 const guardarLocal = (claveLab, precio) => {localStorage.setItem(claveLab, precio)};
 
 guardarLocal ("listaLabs", JSON.stringify(labs));
