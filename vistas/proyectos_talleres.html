@@ -48,6 +48,7 @@
         </div>
      </nav>
     <hr>
+    
     <h1 class="titulo_principal">Nuestros LABS</h1>
         <div>    
             <p class="parrafo_principal">Hola!!! Cómo andan?</p>
@@ -61,6 +62,7 @@
             <li>LAB DE PANES Y PIZZAS</li>
             <li>LAB DE REPOSTERIA</li>
             <li>LAB DE NUTRICION</li>
+            <li>...y muchos más!!!</li>
         </ol>
         <br>
         <p class="parrafo_principal">Cada LAB se realiza online por la plataforma Zoom</p>
@@ -68,9 +70,37 @@
         <br>
         </div>
         
+        <!--Agrego la cotizacion del dolar-->
+        <div >
+            <h4 id="cotizacion" class="parrafo_principal">La cotizacion del dólar es:</h4>
+        </div>
+        
+
         <div id="labsprod" class="row">
             <!--Aqui van los labs de productos-->
         </div>
+        <br>
+
+        <div>
+            <!--Aqui va la tabla y el boton finalizar compra -->
+
+            <h4>Tu carrito:</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="tablacompra">
+                    <!-- aqui tabla carrito -->
+                </tbody>
+            </table>
+            <h4 id="total">Total a pagar u$:  </h4>
+            
+        </div>
+
         
         <!-- <section>
         
@@ -161,6 +191,8 @@
     </footer>-->
     <script src="../js/bootstrap.bundle.js"></script>
     <script src="../js/labs_productos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/labs_productos.json"></script>
     <script src="../js/codigo.js"></script>
 </body>
 </html>
