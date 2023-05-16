@@ -5,6 +5,7 @@
 
 let carrito = [];
 let contenedor = document.getElementById("labsprod");
+let finalizarBtn = document.getElementById("finalizar");
 
 //API de precios dolar
 let dolarVenta;
@@ -31,7 +32,7 @@ function mostrarLabs (){
             
     }
 
-    //agregO eventos
+    //agrego eventos
     labs.forEach((lab)=>{
         document.getElementById(`btn${lab.id}`).addEventListener('click', function(){
             agregarACarrito(lab);
@@ -40,6 +41,7 @@ function mostrarLabs (){
 }
 
 mostrarLabs();
+
 
 
 function tablaDeCompra(){
@@ -52,14 +54,12 @@ function tablaDeCompra(){
         </tr>
     `;
     }
-    totalCarrito = carrito.reduce((acumulador,labs)=> acumulador + labs.precio,0);
-    let infoTotal = document.getElementById("total");
-    infoTotal.innerText="Total a pagar u$: "+totalCarrito;
+    
     
 }
 tablaDeCompra();
 
-function agregarACarrito(labAAgregar){
+ function agregarACarrito(labAAgregar){
     carrito.push(labAAgregar);
     console.table(carrito);
     Swal.fire({
@@ -69,6 +69,7 @@ function agregarACarrito(labAAgregar){
         showConfirmButton: false,
         timer: 1500
       })
+    //armo la tabla para que aparezca los labs agregados al carrito
     document.getElementById('tablacompra').innerHTML += `
         <tr>
             <td>${labAAgregar.id}</td>
@@ -76,16 +77,31 @@ function agregarACarrito(labAAgregar){
             <td>${labAAgregar.precio}</td>
         </tr>
     `;
-    
-    let totalCarrito = carrito.reduce((acumulador,lab)=> acumulador + lab.precio,0);
+    //incremento del total
+    totalCarrito = carrito.reduce((acumulador,lab)=> acumulador + labAAgregar.precio,0);
     let infoTotal = document.getElementById("total");
-    infoTotal.innerText="Total a pagar u$: "+ totalCarrito;
+    infoTotal.innerText="Total a pagar u$: "+totalCarrito;
     
 }
 
 
-agregarACarrito();
-
+//boton finalizar compra
+finalizarBtn.onclick=()=>{
+    carrito=[];
+    document.getElementById('tablacompra').innerHTML='';
+    document.getElementById('total').innerText = 'Total a pagar u$:';
+    Swal.fire({
+        title: 'Su compra de nuestros LABS ha sido realizada con exito!!!',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+        
+}
+agregarACarrito(); 
 //API de precio dolar
 function obtenerDolar(){
     const URLDOLAR='https://api.bluelytics.com.ar/v2/latest';

@@ -12,15 +12,29 @@ campoNombre.oninput = () => {
     }
 }
 //Evento submit para que se valide lo que se envie si esta correcto y completos los campos especiales mencionados (nombre, edad y email)
-let formulario = document.getElementById('fomulario1');
-formulario1.addEventListener('submit', validar);
+let formulario = document.getElementById('envioformulario');
+formulario.addEventListener('submit', validar);
 
  
 function validar(evento){
     if((campoNombre.value == '') || (campoEdad.value == '') || (campoCumple.value == '')){
         evento.preventDefault();
         alert('Ingrese nombre, edad o fecha de cumpleaños validos para que se pueda enviar el formulario!');
+        
+    } else {
+        alert('Formulario enviado!!! Gracias!!!');
+        //puse el alert anterior porque el sweet alert no se porqué me lo tome una milesima de segundo cuando le doy aceptar al alert anterior
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 3000
+          })
     }
+    
+
 }
 
+validar();
 
